@@ -1,0 +1,16 @@
+doctype html
+
+html
+    head
+        script(src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js")
+        link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Lato')
+        link(rel='stylesheet', type='text/css', href='/stylesheets/animate.css')
+
+        block script
+    
+    title Project Metronome
+    
+    body(ng-app="metronome", ng-controller="tController").container-fluid
+        block content

@@ -1,0 +1,23 @@
+div#field.panel.row
+    div.navigation-btn.col-xs-1
+        a(href='#main')
+            span#field-back-main.glyphicon.glyphicon-chevron-left
+
+    div.col-xs-10
+        div.head.row
+            h2 Field Selection 
+        div.row
+            div.col-md-2.col-md-offset-10.hidden-sm.hidden-xs
+                button(type='button', data-toggle='modal', data-target='#myModalFS').btn-help.btn.btn-default ?
+        div.row
+            div.radioBox.col-xs-12
+                input(type='radio', ng-model='fieldSelection', value='highschool')#hs.option-input.radio
+                label(for='hs') High School    
+        div.radioBox.row
+            div.radioBox.col-xs-12
+                input(type='radio', ng-model="fieldSelection", value='college')#college.option-input.radio
+                label(for='college') College
+
+    div.navigation-btn.col-xs-1
+        a(href="#focal")
+            span#field-to-focal.glyphicon.glyphicon-chevron-right

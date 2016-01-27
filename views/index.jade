@@ -1,0 +1,27 @@
+extends layout
+
+block script
+    // includes
+    
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js')
+    script(type='text/javascript', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(type='text/javascript', src='js/Highmaps/api/js/jquery-1.11.3.min.js')
+    script(type='text/javascript', src='js/Highmaps/js/highcharts.js')
+    script(type='text/javascript', src='js/Highmaps/js/modules/heatmap.js')
+    script(type='text/javascript', src='js/metronome.module.js')
+    script(type='text/javascript', src='js/backend.factory.js')
+    script(type='text/javascript', src='js/dataHandler.factory.js')
+    script(type='text/javascript', src='js/ctrl.controller.js')
+    script(type='text/javascript', src='js/trim.filter.js')
+    //script(type='text/javascript', src='js/navigation.js')
+
+block content
+    //app
+    include ./mainPage.jade
+    include ./fieldSelectionPage.jade
+    include ./focalPointPage.jade
+    include ./timeSourcePage.jade
+    include ./loading.jade
+    include ./resultsPage.jade
+    include ./modal.jade
+    include ./tutorialPage.jade

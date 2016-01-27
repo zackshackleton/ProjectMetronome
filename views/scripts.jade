@@ -1,0 +1,17 @@
+script
+    $('#main-to-tutorial').click(function() { 
+    $('#tutorial').addClass('animated fadeInLeft opacity'); 
+    $('#tutorial').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() { 
+    $('#tutorial').removeClass('animated fadeInLeft');
+    $('#main').removeClass('opacity');
+    });
+    });
+            
+script
+    $('#tutorial-back-main').click(function() { 
+    $('#main').addClass('animated fadeInRight opacity'); 
+    $('#main').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() { 
+    $('#main').removeClass('animated fadeInRight');
+    $('tutorial').removeClass('opacity');
+    });
+    });

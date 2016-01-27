@@ -1,0 +1,25 @@
+div#focal.panel.row
+    div.navigation-btn.col-xs-1
+        a(href="#field")
+            span#focal-back-field.glyphicon.glyphicon-chevron-left
+
+    div.col-xs-10
+        div.head.row
+            h2 Focal Point
+        div.row
+            div.col-md-2.col-md-offset-10.hidden-sm.hidden-xs
+                button(type='button', data-toggle='modal', data-target='#myModalFP').btn-help.btn.btn-default ?
+        div.radioBox.row
+            div.row
+                input(type='radio', ng-model='focalPoint', value='dmp')#dmp
+                label(for='dmp') Drum Major Podium
+            div.row
+                input(type='radio', ng-model='focalPoint', value='hspb')#hspb
+                label(for='hspb') High School Press Box
+            div.row
+                input(type='radio', ng-model='focalPoint', value='cpb')#cpb
+                label(for='cpb') College Press Box
+
+    div.navigation-btn.col-xs-1
+        a(href="#time")
+            span#focal-to-time.glyphicon.glyphicon-chevron-right

@@ -1,0 +1,395 @@
+/* line 14, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #FF512F;
+  background: -webkit-linear-gradient(to left, #FF512F, #F09819);
+  background: linear-gradient(to left, #FF512F, #F09819);
+  font-family: 'Lato', sans-serif;
+  color: #393939;
+  font-size: 62.5%; }
+
+/* line 25, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+h1, h2, h3, p {
+  font-family: 'Lato', sans-serif; }
+
+/* line 28, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+h1 {
+  text-align: center;
+  font-size: 6.4rem; }
+
+/* line 32, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+h2 {
+  font-size: 5.8rem;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 2%; }
+
+/* line 38, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+h3 {
+  text-align: center; }
+
+/* line 41, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+p {
+  font-size: 2.0rem; }
+
+/* line 44, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.panel {
+  width: 84vw;
+  height: 84vh;
+  margin: 8vh auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #fafafa;
+  box-shadow: 35px 35px 66px -17px rgba(0, 0, 0, 0.75);
+  border-radius: 10px; }
+  /* line 54, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .panel h2, .panel h3 {
+    color: #393939; }
+  /* line 57, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .panel .navigation-btn span {
+    color: #393939; }
+
+/* line 60, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.btn {
+  background-color: #287b99;
+  color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+  /* line 65, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .btn:hover {
+    color: #fafafa;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  /* line 68, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .btn:active {
+    background-color: #287b99;
+    color: #fafafa; }
+
+/* line 72, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.btn-help {
+  background-color: #db4b38;
+  color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+  /* line 77, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .btn-help:hover {
+    background-color: #db4b38;
+    color: #fafafa;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  /* line 81, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .btn-help:active {
+    background-color: #db4b38;
+    color: #fafafa; }
+
+/* line 85, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.navigation-btn {
+  text-align: center;
+  height: 100%;
+  display: inline-block; }
+  /* line 89, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .navigation-btn span {
+    top: 48%;
+    font-size: 3.6rem;
+    color: white; }
+
+/* line 94, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.animated {
+  animation-duration: 0.3s; }
+
+/* line 105, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#main h1 {
+  text-align: left;
+  padding-top: 10%;
+  padding-bottom: 3%; }
+
+/* line 110, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#main #button-row {
+  text-align: center;
+  padding: 10px 0 10px 0; }
+
+/* line 114, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#main img {
+  height: 60%;
+  width: auto;
+  position: absolute;
+  bottom: 8vh;
+  right: 8vw; }
+
+/* line 121, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#main p {
+  font-size: 2.4rem;
+  line-height: 170%; }
+
+/* line 126, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#main #email-row .email {
+  color: #393939;
+  font-size: 2.4rem; }
+
+/* line 132, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.radioBox {
+  text-align: center; }
+
+/* line 135, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+label {
+  font-size: 20px;
+  text-align: center;
+  background-color: #287b99;
+  color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px; }
+
+/* line 144, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+input[type='radio'] {
+  display: none; }
+  /* line 146, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  input[type='radio']:checked + label {
+    background-color: #2790b6;
+    color: #fafafa;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+/* line 152, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 0; }
+
+/* line 161, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #287b99;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out; }
+
+/* line 171, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #fafafa;
+  border: 2px solid #287b99; }
+
+/* line 176, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.select-style {
+  background-color: #fafafa;
+  color: #393939; }
+
+/* line 185, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#field label {
+  line-height: 450%;
+  width: 51%;
+  height: 5em;
+  margin-top: 5em; }
+
+/* line 191, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#focal label {
+  line-height: 450%;
+  width: 51%;
+  height: 5em;
+  margin-top: 3em; }
+
+/* line 201, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#time .data .row {
+  margin-bottom: 2%; }
+
+/* line 203, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#time label {
+  width: 40%;
+  margin: 0 10px;
+  height: 2em;
+  line-height: 190%; }
+
+/* line 210, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#time .wide label {
+  width: 90%; }
+
+/* line 216, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#loading .loadingBar {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 1.5rem; }
+  /* line 222, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar h3 {
+    font-size: 3.2rem; }
+  /* line 224, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+    background: #40c8f8;
+    border-radius: 2em;
+    -webkit-animation: loading 1s infinite alternate; }
+  /* line 234, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar span:nth-of-type(2) {
+    background: #3dc1f0;
+    -webkit-animation-delay: 0.2s; }
+  /* line 237, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar span:nth-of-type(3) {
+    background: #31a7d2;
+    -webkit-animation-delay: 0.4s; }
+  /* line 240, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar span:nth-of-type(4) {
+    background: #2790b6;
+    -webkit-animation-delay: 0.6s; }
+  /* line 243, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar span:nth-of-type(5) {
+    background: #176d8c;
+    -webkit-animation-delay: 0.8s; }
+  /* line 246, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar span:nth-of-type(6) {
+    background: #095069;
+    -webkit-animation-delay: 1.0s; }
+  /* line 249, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #loading .loadingBar span:nth-of-type(7) {
+    background: #064a62;
+    -webkit-animation-delay: 1.2s; }
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* line 262, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#results #field-holder {
+  text-align: center;
+  padding: 2% 0; }
+
+/* line 265, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#results #field-container {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 270, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#results #field {
+  height: auto;
+  width: 100%; }
+
+/* line 273, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#results #fieldContainer {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 280, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#results #buttonrow {
+  text-align: center; }
+
+/* line 285, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+#tutorial {
+  text-align: center; }
+  /* line 287, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #tutorial #video {
+    margin: 10px; }
+  /* line 289, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #tutorial #backButton {
+    text-align: right; }
+
+/* line 294, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.modal-header {
+  font-size: 2.0rem; }
+
+/* line 297, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.modal-dialog {
+  font-size: 2.0rem;
+  margin-top: 10%;
+  color: #393939; }
+
+/* line 302, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.modal-body {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left; }
+
+/* line 307, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+.modal-footer {
+  text-align: center; }
+
+@media screen and (max-width: 1000px) {
+  /* line 312, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .panel {
+    margin: 4vh auto;
+    width: 92vw;
+    height: 92vh; }
+  /* line 316, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  h2 {
+    font-size: 8rem;
+    padding-top: 20px; }
+  /* line 319, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  p {
+    font-size: 4rem; }
+  /* line 321, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .btn {
+    font-size: 4rem; }
+  /* line 323, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  .btn-help {
+    width: 7rem; }
+  /* line 325, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  label {
+    font-size: 4rem; }
+  /* line 328, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #main h1 {
+    text-align: center;
+    font-size: 7rem; }
+  /* line 331, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #main p {
+    padding-top: 100px;
+    font-size: 4rem;
+    line-height: 120%; }
+  /* line 336, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #main #email-row .email {
+    font-size: 3.2rem; }
+  /* line 338, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #main img {
+    height: 60%;
+    width: auto;
+    position: absolute;
+    bottom: 5vh;
+    opacity: .3;
+    left: 50%;
+    transform: translateX(-50%); }
+  /* line 346, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #main .btn {
+    margin-top: 4rem;
+    font-size: 4rem;
+    width: 70%; }
+  /* line 351, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #tutorial #video {
+    margin: 10% 0; }
+  /* line 354, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #time h3 {
+    font-size: 4rem; }
+  /* line 356, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #time .radioBox {
+    margin-top: 3%; }
+  /* line 358, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #time .wide label {
+    margin-top: 10px; }
+  /* line 361, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #results #field-holder {
+    margin-top: 5rem; }
+  /* line 363, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #results #field-container {
+    width: 86%;
+    margin-top: 10rem;
+    margin-bottom: 10rem; }
+  /* line 367, /Users/zackshackleton/Documents/Projects/Project Metronome/projectmetronome/public/stylesheets/style.sass */
+  #results a {
+    margin-top: 10rem; } }
+
+/*# sourceMappingURL=style.css.map */

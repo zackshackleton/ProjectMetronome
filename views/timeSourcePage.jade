@@ -1,0 +1,93 @@
+div#time.panel.row
+    div.navigation-btn.col-xs-1
+        a(href="#focal")
+            span#time-back-focal.glyphicon.glyphicon-chevron-left
+
+
+    div.col-xs-10
+        div.head.row
+            h2 Time Source
+        div.row
+            div.col-xs-2.col-xs-offset-10
+                button(type='button', data-toggle='modal', data-target='#myModalTS').btn-help.btn.btn-default.hidden-sm.hidden-xs ?
+        div.data.row
+            div.row
+                //Horizontal Steps
+                div.col-md-6.col-md-offset-1.col-xs-12
+                    h3 Horizontal Whole Step : {{horWhoStp}}
+                    input(type='range', ng-model='horWhoStp', min='0', max='4', step='1')
+
+                div.radioBox.col-md-4.col-xs-12
+                    h3 Horizontal Partial Step
+                    input(type='radio', ng-model='horParStp', value='0')#zero.option-input.radio
+                    label(for='zero') 0
+
+                    input(type='radio', ng-model='horParStp', value='0.5')#half.option-input.radio
+                    label(for='half') 1/2
+
+                //Inside & Outside
+            div.row
+                div.radioBox.col-md-6.col-md-offset-3
+                    input(type='radio', ng-model='horStpDir', value='inside')#inside.option-input.radio
+                    label(for='inside') Inside
+
+                    input(type='radio', ng-model='horStpDir', value='outside')#outside.option-input.radio
+                    label(for='outside') Outside
+
+            div.row
+                //Yard Line
+                div.col-md-10.col-md-offset-1
+                    h3 {{yardLine}} Yard Line
+                    input(type='range', ng-model='yardLine', min='0', max='50', step='5')
+            div.row
+                //Side
+                div.radioBox.col-md-6.col-md-offset-3
+                    input(type='radio', ng-model='fieldSide', value='1')#side1.option-input.radio
+                    label(for='side1') Side 1
+                    input(type='radio', ng-model='fieldSide', value='2')#side2.option-input.radio
+                    label(for='side2') Side 2
+            div.row
+                //Vertical Steps
+                div.col-md-6.col-md-offset-1
+                    h3 Vertical Whole Step: {{verWhoStp}}
+                    input(type='range', ng-model='verWhoStp', min='0', max='{{maxVerticalSteps[fieldSelection]}}', step='1')
+
+                div.radioBox.col-md-4
+                    h3 Horizontal Partial Step
+                    input(type='radio', ng-model='verParStp', value='0')#zerov.option-input.radio
+                    label(for='zerov') 0
+
+                    input(type='radio', ng-model='verParStp', value='0.5')#halfv.option-input.radio
+                    label(for='halfv') 1/2
+
+            div.row
+                //Vertical Step Direction
+                div.radioBox.col-md-6.col-md-offset-3
+                    input(type='radio', ng-model='verStpDir', value='front')#front.option-input.radio
+                    label(for='front') In Front Of
+
+                    input(type='radio', ng-model='verStpDir', value='back')#behind.option-input.radio
+                    label(for='behind') Behind
+
+                //Field Marker
+            div.row
+                div.radioBox.wide
+                    div.col-md-3.col-xs-6
+                        input(type='radio', ng-model='fieldMarker', value='fsl')#fsl.option-input.radio
+                        label(for='fsl') Front Sideline
+                    
+                    div.col-md-3.col-xs-6
+                        input(type='radio', ng-model='fieldMarker', value='fh')#fh.option-input.radio
+                        label(for='fh') Front Hash
+                        
+                    div.col-md-3.col-xs-6
+                        input(type='radio', ng-model='fieldMarker', value='bh')#bh.option-input.radio
+                        label(for='bh') Back Hash
+                    
+                    div.col-md-3.col-xs-6
+                        input(type='radio', ng-model='fieldMarker', value='bsl')#bsl.option-input.radio
+                        label(for='bsl') Back Sideline
+
+    div.navigation-btn.col-xs-1
+        a(href="#results", ng-click='res()')
+            span#time-to-results.glyphicon.glyphicon-chevron-right

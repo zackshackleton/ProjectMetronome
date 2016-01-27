@@ -1,0 +1,82 @@
+div(role='dialog')#myModalFS.modal.fade
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                modalText HELP
+            div.modal-body
+                modalText Select the hashes that are being used on your field.
+                br
+            div.modal-footer
+                button(type="button", data-dismiss="modal").btn.btn-default Thanks!
+                
+div(role='dialog')#myModalFP.modal.fade
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                modalText Focal Point Help
+            div.modal-body
+                modalText Select a focal point. 
+                br
+                br
+                |This is the point the ensemble is aiming to have their sound reach.
+                br
+            div.modal-footer
+                button(type="button", data-dismiss="modal").btn.btn-default Thanks!
+
+div(role='dialog')#myModalTS.modal.fade
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                modalText Time Souce Help
+            div.modal-body
+                modalText Enter the location of the time source. 
+                br
+                br
+                |This is the location of the metronome, drumline, or anything else that is controlling tempo. 
+                br
+                br
+                |Steps are a standard 22.5 inches. 
+                br
+            div.modal-footer
+                button(type="button", data-dismiss="modal").btn.btn-default Thanks!
+                
+div(role='dialog')#myModalR.modal.fade
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                modalText Results Help
+            div.modal-body
+                modalText The map consists of a grid marked in half-step increments. Detailed information about the individual locations on the field can be displayed by hovering over the map with the mouse. 
+                modalText The Green section indicates the region where members can play with what they hear from the time source. 
+                br
+                br
+                modalText If the drum major and time source (yellow dot) are visually together, anyone within the same ring as the time source may play with what they see from the drum major. 
+                br
+                br
+                modalText For each member in each ring outside the time source must be one note ahead of what they see from the drum major.
+                br
+                br
+                modalText For each member in each ring inside the time source, a member in that ring must be one note behind what they see from the drum major.
+                br 
+                br
+                modalText The note value for error as well as the tempo can be selected in the extras menu.
+                br
+            div.modal-footer
+                button(type="button", data-dismiss="modal").btn.btn-default Thanks!
+                
+                
+div(role='dialog')#extrasModal.modal.fade
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                modalText Extras
+            div.modal-body
+                div
+                    h3 Tempo : {{tempo}}
+                    input(type='range', ng-model='tempo', min='0', max='300', step='1')  
+                div.text-center
+                    h3 Acceptable Error
+                    select(name='error', ng-model='error', ng-options='err.val as err.label for err in errors').select-style
+            div.modal-footer.center
+                a(type='button', ng-click='res()', data-dismiss="modal").btn.btn-default Update
+                a(type='button', data-dismiss="modal").btn-help.btn.btn-default Cancel
